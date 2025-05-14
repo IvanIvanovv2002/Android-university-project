@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Избор на марка -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Марка автомобил:" />
+        <Spinner
+            android:id="@+id/spinnerBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/car_brands" />
+
+        <!-- Избор на модел -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Модел:" />
+        <Spinner
+            android:id="@+id/spinnerModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Година на производство -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Година на производство:" />
+        <EditText
+            android:id="@+id/editTextYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Въведете година"
+            android:inputType="number" />
+
+        <!-- Тип гориво -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тип гориво:" />
+        <RadioGroup
+            android:id="@+id/radioGroupFuelType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioPetrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Бензин" />
+
+            <RadioButton
+                android:id="@+id/radioDiesel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дизел" />
+
+            <RadioButton
+                android:id="@+id/radioGas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Газ" />
+        </RadioGroup>
+
+        <!-- Среден разход градско, извънградско, комбинирано -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Среден разход (литра/100км):" />
+        <EditText
+            android:id="@+id/editTextUrbanConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Градско"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/editTextHighwayConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Извънградско"
+            android:inputType="numberDecimal" />
+        <EditText
+            android:id="@+id/editTextCombinedConsumption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Комбинирано"
+            android:inputType="numberDecimal" />
+
+        <!-- Разстояние -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Разстояние (км):" />
+        <EditText
+            android:id="@+id/editTextDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Въведете разстояние"
+            android:inputType="numberDecimal" />
+
+        <!-- Вид шофиране -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тип шофиране:" />
+        <Spinner
+            android:id="@+id/spinnerDrivingType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/driving_types" />
+
+        <!-- Цена на горивото -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цена на гориво (лв/литър):" />
+        <EditText
+            android:id="@+id/editTextFuelPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Въведете цена"
+            android:inputType="numberDecimal" />
+
+        <!-- Бутон за изчисление -->
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Изчисли" />
+
+        <!-- Резултат -->
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Резултатът ще се появи тук"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>

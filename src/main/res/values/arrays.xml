@@ -1,0 +1,39 @@
+<resources>
+    <array name="car_brands">
+        <item>BMW</item>
+        <item>Audi</item>
+        <item>Mercedes</item>
+        <item>Volkswagen</item>
+    </array>
+
+    <array name="bmw_models">
+        <item>BMW 3 Series</item>
+        <item>BMW 5 Series</item>
+        <item>BMW X5</item>
+    </array>
+
+    <array name="audi_models">
+        <item>Audi A3</item>
+        <item>Audi A4</item>
+        <item>Audi Q7</item>
+    </array>
+
+    <array name="mercedes_models">
+        <item>Mercedes C-Class</item>
+        <item>Mercedes E-Class</item>
+        <item>Mercedes GLC</item>
+    </array>
+
+    <array name="volkswagen_models">
+        <item>Volkswagen Golf</item>
+        <item>Volkswagen Passat</item>
+        <item>Volkswagen Tiguan</item>
+    </array>
+
+    <!-- Добавено за типа на шофиране -->
+    <array name="driving_types">
+        <item>Градско</item>
+        <item>Извънградско</item>
+        <item>Комбинирано</item>
+    </array>
+</resources>
